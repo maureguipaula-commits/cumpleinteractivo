@@ -28,6 +28,15 @@ background-image: url("fondoweb.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Evita que el fondo se mueva o se deforme al hacer scroll */
+}
+    /* ===== ADAPTACIÓN PARA CELULARES ===== */
+@media (max-width: 480px) {
+    body {
+        /* Centra el fondo y lo ajusta para que el ancho de la imagen encaje perfecto en el celu */
+        background-position: center top; 
+        background-size: auto 100%; 
+    }
 }
 
 /* overlay oscuro cyberpunk */
@@ -35,7 +44,7 @@ body::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.30);
     /* Se posiciona justo encima del fondo del body, pero detrás del contenedor */
     z-index: 1; 
 }
