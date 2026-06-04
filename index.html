@@ -84,18 +84,20 @@ button {
     padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid #ff00ff;
-    background: transparent;
-    color: #ff00ff;
+    border: 2px solid #ff00ff; /* Borde rosa neón un poco más grueso */
+    background: #000000;       /* Fondo negro puro */
+    color: #ffffff;            /* Letras blancas hiper legibles */
     transition: 0.2s;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bold;         /* Letras en negrita para resaltar */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
 }
 
 button:hover {
-    background: #ff00ff;
-    color: black;
-    box-shadow: 0 0 15px #ff00ff;
+    background: #ff00ff;       /* Al pasar el mouse, se invierte al rosa neón */
+    color: #000000;            /* Letras negras */
+    box-shadow: 0 0 20px #ff00ff;
     transform: scale(1.05);
 }
 
