@@ -18,24 +18,18 @@ body{
     color:#00fff2;
     overflow:hidden;
 
-    background-image: url("fondo.jpg");
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image:url("fondo.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
     position:relative;
 }
-
 /* overlay oscuro cyberpunk */
 body::before{
     content:"";
     position:absolute;
     inset:0;
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.55)
-        );
+    background:rgba(0,0,0,0.45);
     z-index:-1;
 }
 
