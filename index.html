@@ -6,7 +6,6 @@
 <title>Instalación Interactiva</title>
 
 <style>
-
 body{
     margin:0;
     height:100vh;
@@ -14,9 +13,64 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:black;
     color:white;
     font-family:Arial, sans-serif;
+
+    /* fondo */
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    body::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+
+
+        button{
+    padding:12px 20px;
+    font-size:18px;
+    cursor:pointer;
+    border:none;
+    border-radius:12px;
+    background:#4f46e5;
+    color:white;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#6366f1;
+    transform:scale(1.05);
+}
+
+        <body>
+
+<div class="container">
+
+<h1>Escribí tu mensaje</h1>
+
+<input id="texto" type="text" maxlength="200" placeholder="Escribí aquí...">
+
+<button onclick="enviar()">Enviar</button>
+
+<div id="estado"></div>
+
+</div>
+}
+    .container{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    text-align:center;
+}
+
 }
 
 h1{
